@@ -1,5 +1,5 @@
 import React from 'react';
-import Answer from '../Answer/index';
+import Answer from './Answer/index';
 import AddButton from '../AddButton/index';
 import { QuestionCardContainer } from './styles';
 

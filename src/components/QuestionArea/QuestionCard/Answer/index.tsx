@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import { AnswerContainer } from './styles';
-import bin from '../../assets/bin.png'
+import bin from '../../../../assets/bin.png';
 
 const Answer: React.FC = () => {
   const [falseAnswer, setFalseAnswer] = useState(false)
