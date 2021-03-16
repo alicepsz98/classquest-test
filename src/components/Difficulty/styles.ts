@@ -3,7 +3,7 @@ import styled from 'styled-components';
 export const DifficultyContainer = styled.div`
   display: flex;
   align-items: center;
-  margin: 20px 0 0 15px;
+  margin-left: 15px;
   h5 {
     margin-right: 10px;
   }
