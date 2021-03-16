@@ -8,7 +8,6 @@ export const ButtonsContainer = styled.div`
     height: 35px;
     border: none;
     outline: none;
-    cursor: pointer;
     margin-left: 10px;
     border-radius: 5px;
     font-weight: 600;

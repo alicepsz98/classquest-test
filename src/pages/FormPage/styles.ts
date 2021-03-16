@@ -2,7 +2,6 @@ import styled from 'styled-components';
 
 export const FormContainer = styled.main`
   background: #f2fcff;
-  font-family: Arial, Helvetica, sans-serif;
   height: 100vh;
   padding: 40px 50px 0 20px;
 `
@@ -24,8 +23,8 @@ export const DescriptionContainer = styled.div`
     flex-direction: column;
     background: #f1f4f5;
     width: 380px;
-    height: 82px;
-    padding-left: 10px;
+    height: 75px;
+    padding: 10px 0 0 10px;
     border-radius: 5px;
     border: 1px solid #d2d4d4;
     margin-bottom: 12px;

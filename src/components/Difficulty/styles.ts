@@ -16,8 +16,8 @@ export const DifficultyContainer = styled.div`
     width: 10px;
     height: 10px;
     border-radius: 50%;
-    cursor: pointer;
     margin-right: 20px;
+    cursor: pointer;
   }
   .easyYes {
     border: 1px solid green;

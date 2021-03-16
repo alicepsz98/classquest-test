@@ -8,5 +8,4 @@ export const ButtonContainer = styled.button`
   border: 1px solid #d2d4d4;
   border-radius: 3px;
   outline: none;
-  cursor: pointer;
 `
