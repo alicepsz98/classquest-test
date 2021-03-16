@@ -12,7 +12,7 @@ export const InputContainer = styled.div`
     display: flex;
     flex-direction: column;
     background: #f1f4f5;
-    width: 160px;
+    width: 170px;
     height: 25px;
     padding-left: 10px;
     border-radius: 5px;
