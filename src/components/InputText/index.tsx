@@ -1,10 +1,21 @@
 import React from 'react';
+import { InputContainer } from './styles';
 
-const InputText: React.FC = () => {
+interface Props {
+  placeholder: string,
+  label: string
+}
+
+const InputText: React.FC<Props> = ({ placeholder, label }) => {
   return (
-    <div>
-      
-    </div>
+    <InputContainer>
+      <label htmlFor="inputText">{label}</label>
+      <input
+        id="inputText"
+        placeholder={placeholder}
+        type="text"
+      />
+    </InputContainer>
   );
 }
 
