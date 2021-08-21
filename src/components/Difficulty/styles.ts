@@ -43,4 +43,4 @@ export const DifficultyContainer = styled.div`
     border: 1px solid red;
     background: white;
   }
-`
+`;

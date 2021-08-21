@@ -6,18 +6,27 @@ import { QuestionCardContainer } from './styles';
 interface Props {
   nameQuestion: string,
   question: string
-}
+};
 
-const QuestionCard: React.FC<Props> = ({ nameQuestion, question }) => {
+const QuestionCard: React.FC<Props> = ({ 
+  nameQuestion, 
+  question, 
+}) => {
+  const questions = [
+    <Answer />,
+    <Answer />,
+    <Answer />,
+    <Answer />,
+  ]
+  const addQuestion = () => {
+    questions.push(...questions, <Answer />)
+  }
   return (
     <QuestionCardContainer>
       <h5>{nameQuestion}</h5>
       <p>{question}</p>
-      <Answer />
-      <Answer />
-      <Answer />
-      <Answer />
-      <AddButton />
+      {questions.map(question => question)}
+      <AddButton add={() => addQuestion()}/>
     </QuestionCardContainer>
   );
 }

@@ -17,4 +17,4 @@ export const SuccessContainer = styled.div`
     cursor: pointer;
     color: green;
   }
-`
+`;

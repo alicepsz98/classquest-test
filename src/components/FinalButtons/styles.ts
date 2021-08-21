@@ -24,4 +24,4 @@ export const ButtonsContainer = styled.div`
       background: green;
     }
   }
-`
+`;

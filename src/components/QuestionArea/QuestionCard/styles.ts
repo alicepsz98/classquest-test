@@ -18,4 +18,4 @@ export const QuestionCardContainer = styled.div`
     padding: 10px;
     margin-bottom: 20px;
   }
-`
+`;

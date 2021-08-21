@@ -41,4 +41,4 @@ export const AnswerContainer = styled.div`
     width: 15px;
     padding-left: 5px;
   }
-`
+`;

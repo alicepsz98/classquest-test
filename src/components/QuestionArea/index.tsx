@@ -4,17 +4,32 @@ import QuestionCard from './QuestionCard/index';
 import { QuestionAreaContainer } from './styles';
 
 const QuestionArea: React.FC = () => {
+
+  const quests = [
+    <QuestionCard
+      nameQuestion="Questão 1"
+      question="Marque a alternativa que apresenta equívoco de escolha lexical:"
+    />,
+    <QuestionCard
+      nameQuestion="Questão 2"
+      question="Marque a alternativa que apresenta equívoco de escolha lexical:"
+    />,
+  ];
+  const addQuest = () => {
+    quests.push(
+      ...quests, 
+      <QuestionCard
+        nameQuestion="Questão 2"
+        question="Marque a alternativa que apresenta equívoco de escolha lexical:"
+      />
+    )
+  }
   return (
     <QuestionAreaContainer>
-        <QuestionCard
-          nameQuestion="Questão 1"
-          question="Marque a alternativa que apresenta equívoco de escolha lexical:"
+        {quests.map(quest => quest)}
+        <AddButton 
+          add={() => addQuest()}
         />
-        <QuestionCard
-          nameQuestion="Questão 2"
-          question="Marque a alternativa que apresenta equívoco de escolha lexical:"
-        />
-        <AddButton />
       </QuestionAreaContainer>
   )
 }
